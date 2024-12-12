@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8EFE5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar Start */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #5D768B;
+    border-bottom: 1px solid #ddd;
+    width: 90%;
+    margin-left: 15rem;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 8px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+
+.top-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 4rem;
+}
+
+.top-nav ul li {
+    margin-left: 43px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.top-nav ul li a:hover {
+    color: #007BFF;
+    background-color: #5D768B;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+/* Navbar End */
+
+/* Sidebar Start */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #C8B39B, #5D768B);
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-y: scroll;
+}
+
+.user-info {
+    background: #F8EFE5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-img-container {
+    margin-bottom: 15px;
+}
+
+.user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #5D768B;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.user-role {
+    font-size: 15px;
+    color: black;
+}
+
+.logout-btn {
+    display: block;
+    margin-top: 20px;
+    background-color: #5D768B;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn i {
+    margin-right: 8px;
+}
+
+.logout-btn:hover {
+    background-color: #333;
+    transform: translateY(-3px);
+}
+/* Sidebar End */
+
+/* Jadwal Start */
+main {
+    margin-left: 270px;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-jadwal {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 270px;
+}
+
+.header-jadwal {
+    background-color: #C8B39B;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16.5px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    height: 5%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #5D768B;
+    color: white;
+}
+
+table th, table td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #5D768B;
+    color: white;
+}
+/* Jadwal End */
+
+/* start dosen */
+
+/* end dosen */
+
+
+/* Denah Start */
+
+.container-denah {
+    margin-left: 270px; /* Menyesuaikan dengan sidebar */
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex; /* Pastikan hanya satu deklarasi */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 270px); /* Mengurangi lebar sidebar dari total lebar halaman */
+}
+
+/* Flexbox untuk ruang */
+.container-denah > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Menyusun Ruang */
+.ruang {
+    width: 140px;  /* Menambah lebar ruang */
+    height: 140px; /* Menambah tinggi ruang */
+    display: flex;
+    flex-direction: column;  /* Membuat elemen di dalam ruang disusun secara vertikal */
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; /* Menyesuaikan ukuran font */
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    text-align: center;  /* Pastikan teks berada di tengah secara horizontal */
+    box-sizing: border-box;
+}
+
+.ruang .nama-ruang {
+    margin-bottom: 5px; /* Memberi jarak antara nama ruang dan keterangan */
+}
+
+.ruang .keterangan {
+    font-size: 12px; /* Ukuran font untuk keterangan lebih kecil */
+}
+
+
+/* .container-denah {
+    display: block;
+    flex-direction: column;
+    margin-left: 270px;  /* Sesuaikan dengan lebar sidebar */
+    /* padding: 20px;
+    width: calc(100% - 270px);  Mengurangi lebar sidebar dari total lebar halaman 
+} */
+
+
+
+/* Styling Status Digunakan */
+.digunakan {
+    background-color: #e74c3c;
+}
+
+/* Styling Status Tidak Digunakan */
+.tidak-digunakan {
+    background-color: #2ecc71;
+}
+
+/* Form Admin */
+form {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+
+/* Denah End */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    main {
+        margin-left: 220px;
+    }
+
+    .container-denah {
+        margin-left: 0;  /* Menghilangkan margin kiri pada layar kecil */
+        width: 100%; /* Pastikan container menggunakan lebar penuh */
+    }
+    .ruang {
+        width: 100%; /* Menggunakan lebar penuh pada perangkat kecil */
+        height: auto; /* Sesuaikan tinggi ruang */
+    }
+
+}
